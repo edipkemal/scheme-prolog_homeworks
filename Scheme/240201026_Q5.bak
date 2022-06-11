@@ -1,0 +1,17 @@
+#lang scheme
+
+(define (power_list alist power)
+  (if
+    (not (zero? (length alist)));statement
+    (append (list (multiply (car alist) power) (square_list (cdr alist))) ;true condition
+    (list );else empty list
+    ))
+
+(define (multiply x power)
+  (cond ((= power 0) 0)
+        ((= power 1) x)
+        (* x (multiply x (- power 1)))
+      ))
+
+
+(square_list (list 2 5 7))
