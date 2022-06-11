@@ -1,7 +1,0 @@
-#lang scheme
-
-(define (square_list alist)
-  (if
-    (not (zero? (length alist)));statement
-    (list )
-    ))
